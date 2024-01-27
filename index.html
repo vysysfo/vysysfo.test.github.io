@@ -8,7 +8,7 @@
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function () {
             // Yönlendirme öncesinde referans sayfa bilgisini localStorage'a kaydet
-            localStorage.setItem("referrer", document.referrer);
+            localStorage.setItem("referrer", location.href);
         });
     </script>
 </head>
@@ -16,9 +16,9 @@
 <body>
     <h1>Yönlendiriliyorsunuz...</h1>
     <!-- Yönlendirme kodu -->
-    <script>
+    <script type="text/javascript">
         setTimeout(function () {
-            window.location.href = "https://vysysfo.github.io";
+            window.location.href = "https://vysysfo.github.io/index.html";
         }, 1000); // 5 saniye sonra yönlendirme yapacak
     </script>
 </body>
