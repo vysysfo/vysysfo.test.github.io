@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yönlendirme Sayfası</title>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Yönlendirme öncesinde referans sayfa bilgisini localStorage'a kaydet
+			localStorage.setItem("referrer", document.referrer);
+		});
+	</script>
+</head>
+
+<body>
+	<h1>Yönlendiriliyorsunuz...</h1>
+	<!-- Yönlendirme kodu -->
+	<script>
+		setTimeout(function () {
+			window.location.href = "https://vysysfo.github.io/index.html";
+		}, 5000); // 5 saniye sonra yönlendirme yapacak
+	</script>
+</body>
+
+</html>
